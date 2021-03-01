@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C967596525EAEF1300E6E64A /* LandmarksApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C967596425EAEF1300E6E64A /* LandmarksApp.swift */; };
+		C967596825EAF22E00E6E64A /* FavouriteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C967596725EAF22E00E6E64A /* FavouriteButton.swift */; };
 		C98F07AB25E585E7006753F8 /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98F07AA25E585E7006753F8 /* CircleImage.swift */; };
 		C98F07AE25E586F4006753F8 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98F07AD25E586F4006753F8 /* MapView.swift */; };
 		C98F07B125E5914E006753F8 /* landmarkData.json in Resources */ = {isa = PBXBuildFile; fileRef = C98F07B025E5914E006753F8 /* landmarkData.json */; };
@@ -24,6 +26,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C967596425EAEF1300E6E64A /* LandmarksApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarksApp.swift; sourceTree = "<group>"; };
+		C967596725EAF22E00E6E64A /* FavouriteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteButton.swift; sourceTree = "<group>"; };
 		C98F07AA25E585E7006753F8 /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
 		C98F07AD25E586F4006753F8 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		C98F07B025E5914E006753F8 /* landmarkData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = landmarkData.json; sourceTree = "<group>"; };
@@ -53,15 +57,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C967596A25EAF2E200E6E64A /* Landmarks */ = {
+			isa = PBXGroup;
+			children = (
+				C98F07C425E5A1A2006753F8 /* LandmarkDetail.swift */,
+				C98F07BD25E59A84006753F8 /* LandmarkRow.swift */,
+				C98F07C125E5A0AB006753F8 /* LandmarkList.swift */,
+			);
+			path = Landmarks;
+			sourceTree = "<group>";
+		};
+		C967596B25EAF30B00E6E64A /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				C98F07AA25E585E7006753F8 /* CircleImage.swift */,
+				C967596725EAF22E00E6E64A /* FavouriteButton.swift */,
+				C98F07AD25E586F4006753F8 /* MapView.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		C98F07BA25E59817006753F8 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				C967596B25EAF30B00E6E64A /* Helpers */,
+				C967596A25EAF2E200E6E64A /* Landmarks */,
 				C9D98C7D25E57932009DD420 /* ContentView.swift */,
-				C98F07AD25E586F4006753F8 /* MapView.swift */,
-				C98F07AA25E585E7006753F8 /* CircleImage.swift */,
-				C98F07BD25E59A84006753F8 /* LandmarkRow.swift */,
-				C98F07C125E5A0AB006753F8 /* LandmarkList.swift */,
-				C98F07C425E5A1A2006753F8 /* LandmarkDetail.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -106,6 +127,7 @@
 				C98F07BB25E5982B006753F8 /* Model */,
 				C98F07BA25E59817006753F8 /* Views */,
 				C9D98C7925E57932009DD420 /* AppDelegate.swift */,
+				C967596425EAEF1300E6E64A /* LandmarksApp.swift */,
 				C9D98C7B25E57932009DD420 /* SceneDelegate.swift */,
 				C9D98C7F25E57934009DD420 /* Assets.xcassets */,
 				C9D98C8425E57934009DD420 /* LaunchScreen.storyboard */,
@@ -198,10 +220,12 @@
 				C98F07AB25E585E7006753F8 /* CircleImage.swift in Sources */,
 				C98F07AE25E586F4006753F8 /* MapView.swift in Sources */,
 				C9D98C7C25E57932009DD420 /* SceneDelegate.swift in Sources */,
+				C967596525EAEF1300E6E64A /* LandmarksApp.swift in Sources */,
 				C98F07C225E5A0AB006753F8 /* LandmarkList.swift in Sources */,
 				C98F07B425E5916C006753F8 /* Landmark.swift in Sources */,
 				C9D98C7E25E57932009DD420 /* ContentView.swift in Sources */,
 				C98F07BE25E59A84006753F8 /* LandmarkRow.swift in Sources */,
+				C967596825EAF22E00E6E64A /* FavouriteButton.swift in Sources */,
 				C98F07C525E5A1A2006753F8 /* LandmarkDetail.swift in Sources */,
 				C98F07B825E596DD006753F8 /* ModelData.swift in Sources */,
 			);
